@@ -217,7 +217,7 @@ public class Basic {
         
         /** 开始执行 **/
         
-        // connect 的 flow 可多个, connect(flow1, flow2...)
+        // connect 的 flow 可有多个, connect(flow1, flow2...)
         Cascade casc = new CascadeConnector().connect(flow);
         casc.complete();
     }
