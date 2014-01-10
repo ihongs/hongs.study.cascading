@@ -17,6 +17,8 @@ java -cp target/hongs-study-cascading-0.0.1-jar-with-dependencies.jar hongs.stud
 
 3. 演示代码:
 
+3.1. 基础功能:
+
 https://github.com/ihongs/hongs.study.cascading/blob/master/src/main/java/hongs/study/cascading/Basic.java
 
 注: 代码已很精简, 内有少量注释标明注意点.
