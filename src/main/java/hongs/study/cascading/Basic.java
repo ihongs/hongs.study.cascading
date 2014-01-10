@@ -142,7 +142,7 @@ public class Basic {
             /**
              * 关联分组输出格式:
              * InnerJoin    [管道1字段],[管道2字段]
-             * LeftJoin        [管道1字段],[管道2字段(可能为null)]
+             * LeftJoin     [管道1字段],[管道2字段(可能为null)]
              * RightJoin    [管道1字段(可能为null)],[管道2字段]
              * OuterJoin    [管道1字段(可能为null)],[管道2字段(可能为null)](不同为null)
              */
