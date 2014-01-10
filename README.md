@@ -19,4 +19,4 @@ java -cp target/hongs-study-cascading-0.0.1-jar-with-dependencies.jar hongs.stud
 
 https://github.com/ihongs/hongs.study.cascading/blob/master/src/main/java/hongs/study/cascading/Basic.java
 
-代码已很精简, 内有少量注释标明注意点.
+注: 代码已很精简, 内有少量注释标明注意点.
