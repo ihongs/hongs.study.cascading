@@ -189,6 +189,7 @@ public class Basic {
         Flow flow;
         
         if (args.length > 3 && "hadoop".equals(args[3])) {
+            // 接入 Hadoop, 如果文件在 HDFS 上请使用 Hfs
             Tap in1 = new Lfs(new cascading.scheme.hadoop.TextLine(), args[0]);
             Tap in2 = new Lfs(new cascading.scheme.hadoop.TextLine(), args[1]);
             Tap out = new Lfs(new cascading.scheme.hadoop.TextLine(), args[2]);
@@ -201,6 +202,7 @@ public class Basic {
             flow = new HadoopFlowConnector(pps).connect(def);
         }
         else {
+            // 数据进和出均在本地
             Tap in1 = new FileTap(new cascading.scheme.local.TextLine(), args[0]);
             Tap in2 = new FileTap(new cascading.scheme.local.TextLine(), args[1]);
             Tap out = new FileTap(new cascading.scheme.local.TextLine(), args[2]);
@@ -215,6 +217,7 @@ public class Basic {
         
         /** 开始执行 **/
         
+        // connect 的 flow 可多个, connect(flow1, flow2...)
         Cascade casc = new CascadeConnector().connect(flow);
         casc.complete();
     }
